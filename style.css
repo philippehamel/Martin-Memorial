@@ -105,15 +105,18 @@ body {
 
 .gallery img:hover {
     transform: scale(2);
+
 }
 
 /* Comment Section */
 .comment-section {
-    margin-top: 30px;
+    padding: 20px;
     text-align: center;
-    padding: 30px 15px;
-    background-color: #f9fafc;
-    border-top: 1px solid #ececec;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ececec;
+    border-radius: 15px;
+    background: #f9fafc;
 }
 
 .comment-section h2 {
