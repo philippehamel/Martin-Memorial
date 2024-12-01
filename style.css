@@ -112,9 +112,9 @@ body {
 .comment-section {
     padding: 20px;
     text-align: center;
+    border: 1px solid #ececec;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px solid #ececec;
     border-radius: 15px;
     background: #f9fafc;
 }
