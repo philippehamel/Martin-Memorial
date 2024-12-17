@@ -107,19 +107,19 @@ body {
   
   .carousel-cell {
     width: 100%; /* full width */
-    padding-left: 10px;
     height: 400px;
     background: #fff;
     /* center images in cells with flexbox */
     display: flex;
+    justify-content: center;
+    counter-increment: gallery-cell;
+  }
+
+  .carousel-cell img {
+    display: block;
     align-items: center;
     justify-content: center;
     object-fit:scale-down;
-  }
-  
-  .carousel-cell img {
-    display: block;
-    max-height: 100%;
   }
 
 /* Comment Section */
