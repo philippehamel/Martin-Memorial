@@ -98,7 +98,7 @@ body {
 }
 
 .main-carousel {
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin-top: 1%;
     margin-left: 5%;
@@ -117,9 +117,7 @@ body {
 
   .carousel-cell img {
     display: block;
-    align-items: center;
-    justify-content: center;
-    object-fit:scale-down;
+    max-width: none;
   }
 
 /* Comment Section */
