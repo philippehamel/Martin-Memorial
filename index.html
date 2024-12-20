@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Langevin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <div class="header">
@@ -54,11 +55,8 @@
 
         <div class="gallery-section">
             <h2>Photos</h2>
-            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-            <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet"/>
-            <div class="main-carousel" data-flickity='{ "contain": true, "imagesLoaded": true, "resize": true }'>
-                <div class="carousel-cell"><img src="images\1969-1970-Approximativement-chambre-1.JPG" /></div>
-                <div class="carousel-cell"><img src="images\1969-1970-Approximativement-chambre-2.JPG" /></div>
+            <div class="slider">
+                                <div class="carousel-cell"><img src="images\1969-1970-Approximativement-chambre-2.JPG" /></div>
                 <div class="carousel-cell"><img src="images\1969-1970-Ste-Anne-de-Beaupré.jpg" /></div>
                 <div class="carousel-cell"><img src="images\1973-Approximativement-première-communion-Doris.jpg" /></div>
                 <div class="carousel-cell"><img src="images\1975-Approximativement.jpg" /></div>
@@ -112,5 +110,18 @@
         <p>"Il est parti mais pas oublié"</p>
         <p>&copy; 2024 Famille et amis de Martin Langevin</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: true
+        });
+    </script>
 </body>
 </html>
