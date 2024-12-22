@@ -96,31 +96,38 @@ body {
     justify-content: center;
     gap: 10px;
 }
-
-.main-carousel {
-    width: 100%;
-    align-items: center;
-    margin-top: 1%;
-    margin-left: 5%;
-    height: 420px;
-  }
   
-  .carousel-cell {
-    width: 100%; /* full width */
-    height: 400px;
-    background: #fff;
-    /* center images in cells with flexbox */
+/* Slider Component */
+.slider {
+    margin: 20px auto;
+    max-width: 100%; /* Keeps the slider responsive */
+}
+
+/* Individual Slide Cells */
+.carousel-cell {
     display: flex;
     justify-content: center;
-    counter-increment: gallery-cell;
-  }
+    align-items: center;
+    background-color: #ffffff; /* Neutral background for images */
+}
 
-  .carousel-cell img {
-    height: 80%;
+/* Slide Images */
+.carousel-cell img {
+    max-width: 100%;
+    height: 360px;
+    object-fit: cover; /* Ensures images fill their space without distortion */
+}
+
+/* Slider Controls */
+.slider-controls {
     display: flex;
-    max-width: none;
-    margin: 20px;
-  }
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; /* Space above the controls */
+    padding: 10px; /* Add some padding for breathing room */
+    border-radius: 15px; /* Smooth corners for visual consistency */
+    gap: 10px; /* Ensures space between arrows and dots */
+}
 
 /* Comment Section */
 .comment-section {
